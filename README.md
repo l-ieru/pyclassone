@@ -34,3 +34,40 @@ leapyear.py
 19.第95行最后要加上:  
 20.第96行 )前面应该加上"  
 21.第99行表示相等应该是==而不是=  
+## 笔记
+* 安装git $ sudo apt-get install git  
+* 将作业提交到github上  
+$ cd pyclassone
+$ git add .
+$ git commit -m " "
+$ git push
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
