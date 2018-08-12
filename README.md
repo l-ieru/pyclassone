@@ -14,7 +14,7 @@ leapyear.py
 ### 改正的错误
 1.第4行没有定义height 应加入 hight = input()  
 2.第5行没有反括号 应在最后加上 )  
-3.第10行应该加上一行 from sys import argv   
+3.第10行应该加上一行 import argv   
 4.第14行filename打成了filenme   
 5.第16行没有格式化 应该在(和 "之间加上 f   
 6.第17行少打了一个t 应该在tx后面加一个t  
