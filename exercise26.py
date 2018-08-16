@@ -7,7 +7,7 @@ weight = input()
 
 print(f"So, you're {age} old, {height} tall and {weight} heavy.")
 
-import argv
+from sys import argv
 
 script, filename = argv
 
@@ -53,7 +53,7 @@ def secret_formula(started):
 
 
 start_point = 10000
-beans, jars = secret_formula(start_point)
+beans, jars, crates= secret_formula(start_point)
 
 # remember that this is another way to format a string
 print("With a starting point of: {}".format(start_point))
@@ -65,19 +65,19 @@ start_point = start_point / 10
 print("We can also do that this way:")
 formula = secret_formula(start_point)
 # this is an easy way to apply a list to a format string
-print("We'd have {} beans, {} jars, and {} crates.".format(*formula))
+print("We'd have {} beans, {} jars, and {} crates.".format(*secret_formula(start_point)))
 
 
 
 people = 20
-cates = 30
+cats = 30
 dogs = 15
 
 
 if people < cats:
     print("Too many cats! The world is doomed!")
 
-if people < cats:
+if people > cats:
     print("Not many cats! The world is saved!")
 
 if people < dogs:
@@ -89,10 +89,10 @@ if people > dogs:
 
 dogs += 5
 
-if people >= dogs:
+if people > dogs:
     print("People are greater than or equal to dogs.")
 
-if people <= dogs:
+if people < dogs:
     print("People are less than or equal to dogs.")
 
 
