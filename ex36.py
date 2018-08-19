@@ -18,8 +18,8 @@ def start():
 		print("你一个不留神摔了下去，挂了")
 		exit(0)
 	elif "1.走进去" in choice or "2.从窗户爬进去" in choice or "从窗户爬进去" in choice or "走进去" in choice:
-		print("是不是忘了说只用输选项编号？")
-		exit(0)
+		print("忘了说只用输选项编号，对不起你只有重来一次了")
+		start()
 	else:
 		print("你还真以为自己上天入地无所不能了啊")
 		exit(0)
@@ -31,21 +31,27 @@ def first():
 	print("""
 	1.抢徐y的
 	2.抢吴y的
-	3.作遵纪守法好公民，谁的都不抢
+	3.视而不见
 	""")
 	choice = input("> ")
 	if choice == "1":
 		print("徐y号召众将你扔了出去")
-		exit(0)
+		print("是否选择再来一次")
+			choice = input("> ")
+			if choice == "是":
+				start()
+			else:
+				print("拜拜了您呐")
+				exit(0)
 	elif choice == "2":
-		print("两个吴y使出狮子吼加一招大喇叭，你被声波震出了房间，穿透了墙壁，从空中掉下去，挂了")
-		exit(0)
+		print("两个吴y使出狮子吼加一招大喇叭，你被声波震出了房间.一切从头再来。")
+		start()
 	elif choice == "3":
-		print("恭喜您进入决赛圈")
-		last()
-	elif "抢徐y的" in choice or "抢吴y的" in choice or "作遵纪守法好公民，谁的都不抢" in choice or "1.抢徐y的" in choice or "2.抢吴y的" in choice or "3.作遵纪守法好公民，谁的都不抢" in choice:
-		print("是不是忘了说只用输选项编号？")
-		exit(0)
+		print("再给你一次机会")
+		first()
+	elif "抢徐y的" in choice or "抢吴y的" in choice or "视而不见" in choice or "1.抢徐y的" in choice or "2.抢吴y的" in choice or "3.视而不见" in choice:
+		print("忘了说只用输选项编号，你在来一次吧")
+		first()
 	else:
 		print("您是不是有点叛逆啊")
 		exit(0)
@@ -58,7 +64,7 @@ def last():
 	print("""
 	1.豁出去拼了
 	2.用一包薯片收买
-	3.动之以情，晓之以理
+	3.跑
 	""")
 	choice = input("> ")
 	if choice == "1":
@@ -66,11 +72,12 @@ def last():
 		exit(0)
 	elif choice == "2":
 		print("你觉得一包就够了吗")
-		exit(0)
+		last()
 	elif choice == "3":
-		print("对嘛，大家都是文明人，讲道理的。你凭借口才说服了310，成功！")
+		print("你逃脱了，但是不巧，这件事被传出去了，你被嘲笑了很久")
+		exit(0)
 	else:
-		print("一首凉凉送给你")
+		print("你莫名其妙的打败了310，从此江湖上留下了你的传说")
 		exit(0)
 
 start()
