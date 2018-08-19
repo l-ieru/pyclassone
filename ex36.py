@@ -37,12 +37,12 @@ def first():
 	if choice == "1":
 		print("徐y号召众将你扔了出去")
 		print("是否选择再来一次")
-			choice = input("> ")
-			if choice == "是":
-				start()
-			else:
-				print("拜拜了您呐")
-				exit(0)
+		choice = input("> ")
+		if choice == "是":
+			start()
+		else:
+			print("拜拜了您呐")
+			exit(0)
 	elif choice == "2":
 		print("两个吴y使出狮子吼加一招大喇叭，你被声波震出了房间.一切从头再来。")
 		start()
@@ -53,8 +53,7 @@ def first():
 		print("忘了说只用输选项编号，你在来一次吧")
 		first()
 	else:
-		print("您是不是有点叛逆啊")
-		exit(0)
+		last()
 
 
 
