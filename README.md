@@ -75,9 +75,9 @@ $ git push
 18.+=: 递增  
 19.return: 返回  
 20
-#从头学起
-##遇到的问题
-*22/7/10
+# 从头学起
+## 遇到的问题
+* 22/7/10
 ValueError: not enough values to unpack (expected 2, got 1)
 搜索说是空行出现了错误，还没有发现解决方法
 
