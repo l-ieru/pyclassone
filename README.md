@@ -1,3 +1,9 @@
+# 从头学起
+## 遇到的问题
+* 22/7/10<br>
+ValueError: not enough values to unpack (expected 2, got 1)<br>
+搜索说是空行出现了错误，还没有发现解决方法<br>
+解决：运行的时候没有输参数，随便输一个就好了
 # pyclassone
 ## 环境准备 
 Linux:Ubuntu Linux 18.04   
@@ -75,11 +81,7 @@ $ git push
 18.+=: 递增  
 19.return: 返回  
 20
-# 从头学起
-## 遇到的问题
-* 22/7/10<br>
-ValueError: not enough values to unpack (expected 2, got 1)<br>
-搜索说是空行出现了错误，还没有发现解决方法
+
 
 
 
